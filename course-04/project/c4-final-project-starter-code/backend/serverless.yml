@@ -6,6 +6,7 @@ service: srvrless
 plugins:
   - serverless-webpack
   - serverless-iam-roles-per-function
+  - serverless-reqvalidator-plugin
   - serverless-aws-documentation
 provider:
   name: aws
@@ -45,6 +46,7 @@ custom:
             - dueDate
           properties:
             name:
+              minLength: 1
               type: string
             dueDate:
               type: string
@@ -57,6 +59,7 @@ custom:
             - done
           properties:
             name:
+              minLength: 1
               type: string
             dueDate:
               type: string
