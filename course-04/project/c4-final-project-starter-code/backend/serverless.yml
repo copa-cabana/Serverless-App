@@ -45,7 +45,6 @@ custom:
             - dueDate
           properties:
             name:
-              minLength: 1
               type: string
             dueDate:
               type: string
@@ -58,7 +57,6 @@ custom:
             - done
           properties:
             name:
-              minLength: 1
               type: string
             dueDate:
               type: string
